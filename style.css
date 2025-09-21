@@ -88,7 +88,7 @@ ul.skills > span {
 }
 
 .skill-item:hover {
-  background: #1964aa;
+  background: #23283a;
 }
 
 a {
@@ -294,6 +294,33 @@ ul.main-skills li::before {
   text-align: left;
 }
 
+/* Show description only when .expanded is on .skill-item */
+.skill-item .skill-desc {
+  display: none;
+  background: #23283a;
+  color: #b0b6c1;
+  margin: 0.3em 0 0.7em 0.7em;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-size: 0.97em;
+  transition: all 0.3s;
+}
+
+.skill-item.expanded .skill-desc {
+  display: block;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 32px auto 24px auto;
+  border: 4px solid #1a73e8;
+  box-shadow: 0 2px 12px #0003;
+}
+
 @media (max-width: 600px) {
   #cv-body {
     padding: 16px 4vw;
@@ -304,4 +331,24 @@ ul.main-skills li::before {
   h2 {
     font-size: 1.1em;
   }
+}
+
+.header-container {
+    display: flex; /* Enables Flexbox */
+    flex-direction: row-reverse; /* Puts the photo on the right */
+    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; /* Spreads items to opposite ends */
+    margin-bottom: 2em; /* Adds space below the header section */
+}
+
+/* Adjust the profile photo styles for the new layout */
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #1a73e8;
+    box-shadow: 0 2px 12px #0003;
+    /* Remove the old margin to center it */
+    margin: 0;
 }
