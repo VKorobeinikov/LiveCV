@@ -1,15 +1,30 @@
+<!-- Link to Font Awesome for icons to add in hobbies-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Link to your custom CSS file -->
+<link rel="stylesheet" href="style.css">
 <section id="cv-body">
+    <!-- Contacts section -->
     <h1>Vladislav Korobeinikov</h1>
     <h1>Contact Information</h1>
-    <p>Email: vladisl.korobeinikov94@outlook.it</p>
-    <p>Phone: +39 348 3612889</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vladislav-korobeinikov-480302132/" target="_blank">Vladislav Korobeinikov</a></p>
-    <h2>Experience</h2>
+    <p><strong>Email:</strong> vladisl.korobeinikov94@outlook.it</p>
+    <p><strong>Phone:</strong> +39 348 3612889</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vladislav-korobeinikov-480302132/" target="_blank">Vladislav Korobeinikov</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/vladislav-korobeinikov" target="_blank">Vladislav Korobeinikov</a></p>
+
+    <!-- Presentation section -->
+    <h2>Personal Summary</h2>
+      <p>
+       IT Analyst Consultant with 2+ years of experience supporting 10+ critical systems in 24/7 manufacturing environments. Delivered 3 major system migrations and resolved over 70% of on-call tickets, including the identification of 3 recurring issues that, once fixed, reduced related ticket volume by 90%. Specialized in troubleshooting SQL-based systems and configuring operational metrics within pre-defined development frameworks. Acted as SysAdmin for SCADA environments (Ignition, Wonderware), ensuring system reliability and data integrity. Contributed to a 30% reduction in non-critical user calls through data-driven analysis and targeted user support.
+      </p>
+
+    <!-- Experience section  -->
+      <h2>Experience</h2>
     <div class="experience">
         <h3>IT Analyst Consultant - Softweb srl - Philip Morris Italy</h3>
         <p><em>Bologna, Italy | 02/2023 – Present</em></p>
         <strong>Main Skills:</strong>
   <ul class="main-skills">
+  <!-- Here for each skill item make it bulet point and interactive to "explode" the description-->
   <li class="skill-item">
     System Configuration and Maintenance
     <div>
@@ -106,16 +121,98 @@
   </li>  
   </div>
 
+ <!-- Skills Section - modified with the bar-bg for the proficiency bars-->
   <h2>Skills</h2>
-  <ul class="skills">
-    <li>SQL Query Implementation (Advanced)</li>
-    <li>Database:MS SQL Server, SSDT (Intermediate)</li>
-    <li>SQL Development</li>
-  </ul>
+<div class="skills-bars">
+  <div class="skill-bar-group">
+    <strong>Technical & Systems</strong>
+    <div class="skill-bar">
+      <span class="skill-label">SQL Query Implementation</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Database: MS SQL Server, SSDT</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">SCADA Systems Ignition | AVEVA Wonderware</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">System Troubleshooting</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+  </div>
+  <div class="skill-bar-group">
+    <strong>Project & Process Management</strong>
+    <div class="skill-bar">
+      <span class="skill-label">Project Management</span>
+      <div class="bar-bg"><div class="bar-fill beginner"></div></div>
+      <span class="skill-level">Beginner</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Agile and Scrum Methodologies</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Change Management</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">ITIL Framework Familiarity</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Project Tools: Jira</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Ticketing Systems: ServiceNow</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+  </div>
+  <div class="skill-bar-group">
+    <strong>Communication & Strategic</strong>
+    <div class="skill-bar">
+      <span class="skill-label">Client Relationship Management</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Technical Communication</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Problem Resolution</span>
+      <div class="bar-bg"><div class="bar-fill advanced"></div></div>
+      <span class="skill-level">Advanced</span>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label">Technological Innovation Understanding</span>
+      <div class="bar-bg"><div class="bar-fill intermediate"></div></div>
+      <span class="skill-level">Intermediate</span>
+    </div>
+  </div>
+</div>
 
   <h2>Certifications & Courses</h2>
   <ul class="certs">
-    <li>AWS Certified Cloud Practitioner, 35580c9b879c4207bdd860d2cd083b6b</li>
+    <li>
+    <!-- Added a direct link for the certification explanation on AWS website -->  
+      <a href="https://aws.amazon.com/it/certification/certified-cloud-practitioner/" target="_blank">
+        AWS Certified Cloud Practitioner
+      </a>, ID: 35580c9b879c4207bdd860d2cd083b6b
+    </li>
     <li>Practical SQL Bootcamp for Data Analysts and Data Scientists, Udemy</li>
     <li>Excel for Business Analysts, Udemy</li>
     <li>Marketing Analytics and Business Intelligence, Emilia Romagna Region in collaboration with Data Lab, Form Industria, and CISITA Parma</li>
@@ -123,11 +220,86 @@
   </ul>
 
   <h2>Languages</h2>
-  <ul class="languages">
-    <li>Italian (Native)</li>
-    <li>English (Advanced)</li>
-    <li>Spanish (Upper Intermediate)</li>
-    <li>German (Beginner)</li>
-    <li>Russian (Beginner)</li>
+<div class="languages-segments">
+  <div class="language-segment">
+    <span class="lang-name">Italian:</span>
+    <span class="lang-level">First Language</span>
+  </div>
+  <div class="language-segment">
+    <span class="lang-name">English:</span>
+    <div class="lang-bars">
+      <span class="bar filled"></span>
+      <span class="bar filled"></span>
+      <span class="bar filled"></span>
+      <span class="bar filled"></span>
+      <span class="bar"></span>
+    </div>
+    <span class="lang-cefr">C1</span>
+    <div class="lang-desc">Advanced</div>
+  </div>
+  <div class="language-segment">
+    <span class="lang-name">Spanish:</span>
+    <div class="lang-bars">
+      <span class="bar filled"></span>
+      <span class="bar filled"></span>
+      <span class="bar filled"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <span class="lang-cefr">B2</span>
+    <div class="lang-desc">Upper Intermediate</div>
+  </div>
+  <div class="language-segment">
+    <span class="lang-name">Russian:</span>
+    <div class="lang-bars">
+      <span class="bar filled"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <span class="lang-cefr">A1</span>
+    <div class="lang-desc">Beginner</div>
+  </div>
+  <div class="language-segment">
+    <span class="lang-name">German:</span>
+    <div class="lang-bars">
+      <span class="bar filled"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <span class="lang-cefr">A1</span>
+    <div class="lang-desc">Beginner</div>
+  </div>  
+</div>
+
+  <h2>Education</h2>
+  <ul class="education">
+    <li><strong>Degree in Statistical Sciences: Economics and Business Curriculum UNIBO</strong> - Bologna, Italy, 2021
+    <br>
+      <span style="font-weight: normal">Thesis: Conjoint Analysis on the Relationship between Business Guests, and Hotels
+    </span>
+    </li>
+    <li><strong>Diploma as Business Expert: Correspondent in foreign languages Technical and Commercial Institute Rosa Luxemburg</strong> - Bologna, Italy
+    </li>
+    <li><strong>Artistic and cultural training: Clarinet G.B. Martini Conservatory</strong> - Bologna, Italy
+    </li>
+  </ul>
+
+  <h2>Hobbies & Interests</h2>
+  <ul class="hobbies">
+  <!-- For each hobby find an image or icon representation -->
+    <li><i class="fas fa-guitar"></i>Music (Guitar)</li>
+    <li><i class="fas fa-gamepad"></i>Gaming (Console)</li>
+    <li><i class="fas fa-cloud"></i>Technology and Cloud</li>
+  </ul>
+  
+  <h2>Career Goals</h2>
+  <ul class="career-goals">
+    <p>
+      Transforming my IT project delivery background, I aim to become a Technical Product Expert, bridging business and tech. My ultimate goal is to evolve into a Solution Architect, designing innovative, scalable systems.
+    </p>
   </ul>
 </section>
