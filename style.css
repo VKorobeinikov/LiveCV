@@ -352,10 +352,28 @@ ul.main-skills li::before {
     border-radius: 50%;
     border: 6px solid #1a73e8;
     box-shadow: 0 2px 12px #0003;
-} /*fixed the issue with visualization on the phone screens*/
+} 
 
 /*adding visual adaptation also for the contact info*/
 .contact-info {
     flex: 1 1 300px;/*flexible width with min*/
     min-width: 200px;
+}
+
+/*fixed the issue with visualization on the phone screens*/
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column-reverse; /* Contact info first, photo below */
+    align-items: center;
+    text-align: center;
+  }
+  .profile-photo {
+    width: 50vw;
+    max-width: 150px;
+    margin-top: 1em;
+  }
+  .contact-info {
+    width: 100%;
+    min-width: unset;
+  }
 }
