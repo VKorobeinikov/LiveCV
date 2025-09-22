@@ -343,12 +343,17 @@ ul.main-skills li::before {
 
 /* Adjust the profile photo styles for the new layout */
 .profile-photo {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    width: 30vw;           /* 30% of viewport width */
+    max-width: 220px;      /* Never larger than 220px */
+    min-width: 100px;      /* Never smaller than 100px */
+    height: auto;          /* Keeps aspect ratio */
     border-radius: 50%;
     border: 6px solid #1a73e8;
     box-shadow: 0 2px 12px #0003;
-    /* Remove the old margin to center it */
-    margin: 0;
+} /*fixed the issue with visualization on the phone screens*/
+
+/*adding visual adaptation also for the contact info*/
+.contact-info {
+    flex: 1 1 0;
+    min-width: 180px;
 }
