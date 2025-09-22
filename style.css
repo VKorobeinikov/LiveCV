@@ -335,7 +335,7 @@ ul.main-skills li::before {
 
 .header-container {
     display: flex; /* Enables Flexbox */
-    flex-direction: row-reverse; /* Puts the photo on the right */
+    flex-direction: row; /* Puts the photo on the right */
     align-items: flex-start; /* Vertically aligns at the top */
     justify-content: space-between; /* Spreads items to opposite ends */
     flex-wrap: wrap; /*wrapping on small screens*/
@@ -352,6 +352,7 @@ ul.main-skills li::before {
     border-radius: 50%;
     border: 6px solid #1a73e8;
     box-shadow: 0 2px 12px #0003;
+    align-self: flex-start; /*ensures photo stays at the top right*/
 } /*fixed the issue with visualization on the phone screens*/
 
 /*adding visual adaptation also for the contact info*/
