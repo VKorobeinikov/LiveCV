@@ -338,6 +338,8 @@ ul.main-skills li::before {
     flex-direction: row-reverse; /* Puts the photo on the right */
     align-items: center; /* Vertically centers the items */
     justify-content: space-between; /* Spreads items to opposite ends */
+    flex-wrap: wrap; /*wrapping on small screens*/
+    gap: 2em; /*spacing*/
     margin-bottom: 2em; /* Adds space below the header section */
 }
 
@@ -354,6 +356,6 @@ ul.main-skills li::before {
 
 /*adding visual adaptation also for the contact info*/
 .contact-info {
-    flex: 1 1 0;
-    min-width: 180px;
+    flex: 1 1 300px;/*flexible width with min*/
+    min-width: 200px;
 }
