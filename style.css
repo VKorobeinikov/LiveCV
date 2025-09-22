@@ -336,7 +336,7 @@ ul.main-skills li::before {
 .header-container {
     display: flex; /* Enables Flexbox */
     flex-direction: row-reverse; /* Puts the photo on the right */
-    align-items: center; /* Vertically centers the items */
+    align-items: flex-start; /* Vertically aligns at the top */
     justify-content: space-between; /* Spreads items to opposite ends */
     flex-wrap: wrap; /*wrapping on small screens*/
     gap: 2em; /*spacing*/
