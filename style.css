@@ -296,7 +296,7 @@ ul.main-skills li::before {
 }
 
 /*this is needed to start a new paragraph for the skill levels on phone devices*/
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .skill-bar {
     flex-direction: column;
     align-items: flex-start;
@@ -326,7 +326,7 @@ ul.main-skills li::before {
     margin-left: 0;
     text-align: left;
   }
-}
+}*/
 
 
 /* Show description only when .expanded is on .skill-item */
