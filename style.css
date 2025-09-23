@@ -301,15 +301,31 @@ ul.main-skills li::before {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .skill-label,
   .bar-bg,
   .skill-level {
     width: 100%;
     display: block;
   }
+
+  .bar-bg {
+    min-width: 200px;
+    height: 14px;
+    margin: 0.5em 0;
+  }
+
+  .bar-fill {
+    width: 100%; /* Ensure it fills the container */
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);
+  }
+
   .skill-level {
     margin-top: 0.5em;
     margin-left: 0;
+    text-align: left;
   }
 }
 
