@@ -272,7 +272,7 @@ ul.main-skills li::before {
   background: #23283a;
   border-radius: 8px;
   height: 14px;
-  margin: 0 1em;
+  margin: 0.5em 0; /* this was breaking the bar-bg and collapsing the element in media*/
   overflow: hidden;
   box-shadow: 0 1px 4px #0002;
 }
