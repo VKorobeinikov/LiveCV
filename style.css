@@ -311,14 +311,12 @@ ul.main-skills li::before {
     min-width: 120px;
     height: 14px;
     margin: 0.5em 0;
-    background: red !important; /*debug*/
   }
   .bar-fill {
     height: 14px; /*bar fill had no height fixing it*/
     border-radius: 8px;
     /* No need to set width here, it comes from .bar-fill.advanced etc. */
-    background: red !important; /*debug*/
-    /*background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);*/
+    background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);
     transition: width 0.7s;
   }
   .skill-level {
