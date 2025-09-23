@@ -72,7 +72,7 @@ ul.skills > span {
 }
 
 .skill-item > div {
-  background: #f1f3f4;
+  background: #7e838c81;
   margin: 0.3em 0 0.7em 0.7em;
   padding: 0.5em 1em;
   border-radius: 6px;
@@ -331,7 +331,7 @@ ul.main-skills li::before {
 .skill-item > .skill-desc { /*overriding the father node for the colour*/
   display: none;
   background: #1b293a !important;
-  color: rgba(126, 131, 140, 0.5);
+  color: #f5f6f8;
   margin: 0.3em 0 0.7em 0.7em;
   padding: 0.5em 1em;
   border-radius: 6px;
