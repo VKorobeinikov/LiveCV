@@ -261,7 +261,8 @@ ul.main-skills li::before {
 }
 
 .skill-label {
-  flex: 0 0 260px;
+  flex: 0 0 40%;
+  min-width: 120px;
   color: #fff;
   font-size: 1em;
 }
