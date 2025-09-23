@@ -328,7 +328,7 @@ ul.main-skills li::before {
 
 
 /* Show description only when .expanded is on .skill-item */
-.skill-item .skill-desc {
+.skill-item > .skill-desc { /*overriding the father node for the colour*/
   display: none;
   background: #23283a;
   color: rgba(126, 131, 140, 0.5);
