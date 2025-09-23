@@ -302,19 +302,15 @@ ul.main-skills li::before {
     align-items: flex-start;
   }
   .skill-label,
-  .bar-bg,
   .skill-level {
     width: 100%;
     display: block;
   }
   .bar-bg {
+    width: 100%;
     min-width: 120px;
     height: 14px;
     margin: 0.5em 0;
-    background: #23283a;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 1px 4px #0002;
   }
 /*updated this part to make sure that the bar shows up on the smartphones*/
   .bar-fill {
@@ -323,9 +319,6 @@ ul.main-skills li::before {
     background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);
     transition: width 0.7s;
   }
-  .bar-fill.advanced { width: 90%; }
-  .bar-fill.intermediate { width: 65%; }
-  .bar-fill.beginner { width: 35%; }
   .skill-level {
     margin-top: 0.5em;
     margin-left: 0;
