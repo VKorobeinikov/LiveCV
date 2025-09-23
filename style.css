@@ -305,12 +305,11 @@ ul.main-skills li::before {
   .bar-bg,
   .skill-level {
     width: 100%;
+    display: block;
   }
   .skill-level {
     margin-top: 0.5em;
     margin-left: 0;
-    text-align: left;
-    display: block;
   }
 }
 
