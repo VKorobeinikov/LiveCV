@@ -311,15 +311,15 @@ ul.main-skills li::before {
     min-width: 120px;
     height: 14px;
     margin: 0.5em 0;
-    background: red;
+    background: red !important; /*debug*/
   }
-/*updated this part to make sure that the bar shows up on the smartphones*/
   .bar-fill {
     height: 100%;
     border-radius: 8px;
-    background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);
+    /* No need to set width here, it comes from .bar-fill.advanced etc. */
+    background: red !important; /*debug*/
+    /*background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);*/
     transition: width 0.7s;
-    background: yellow;
   }
   .skill-level {
     margin-top: 0.5em;
@@ -327,6 +327,7 @@ ul.main-skills li::before {
     text-align: left;
   }
 }
+
 
 /* Show description only when .expanded is on .skill-item */
 .skill-item .skill-desc {
