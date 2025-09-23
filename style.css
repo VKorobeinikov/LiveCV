@@ -295,6 +295,21 @@ ul.main-skills li::before {
   text-align: left;
 }
 
+/*this is needed to start a new paragraph for the skill levels on phone devices*/
+@media (max-width: 600px) {
+  .skill-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skill-level {
+    margin-top: 0.3em;
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+}
+
 /* Show description only when .expanded is on .skill-item */
 .skill-item .skill-desc {
   display: none;
