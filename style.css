@@ -328,7 +328,7 @@ ul.main-skills li::before {
 
 
 /* Show description only when .expanded is on .skill-item */
-.skill-item > .skill-desc { /*overriding the father node for the colour*/
+.skill-item > .skill-desc { /*overriding the father node for the color*/
   display: none;
   background: #1b293a !important;
   color: #f5f6f8 !important;
@@ -410,3 +410,10 @@ ul.main-skills li::before {
     min-width: unset;
   }
 }
+
+
+ul.main-skills li.skill-item > .skill-desc {
+  color: #ffffff !important;
+  background: #1b293a !important;
+}
+
