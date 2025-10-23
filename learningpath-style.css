@@ -1,0 +1,199 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #040038; /* dark gray background */
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#learning-path {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #1c212b; /* slightly lighter dark for contrast */
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 5000px rgba(5, 3, 168, 0.74);
+}
+
+h1, h2, h3 {
+    color: #1a73e8; /* Main primary blue */
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    text-align: center; /* Center the main title */
+}
+
+h2 {
+    font-size: 1.5em; /* Larger step titles */
+    color: #66b5ff; /* Lighter blue for H2 in timeline content */
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+/* ======================================= */
+/* TIMELINE SPECIFIC STYLES */
+/* ======================================= */
+
+/* Outer container for the timeline */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 3em 0;
+    position: relative;
+}
+
+/* The vertical connecting line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45px;
+    bottom: 0;
+    width: 4px;
+    background-color: #23283a; /* Dark line color */
+    border-radius: 4px;
+}
+
+/* Individual timeline step container */
+.timeline-step {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 3em;
+    min-height: 100px;
+}
+
+/* The Circle/Dot/Indicator */
+.timeline-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #1a73e8; /* Primary blue border */
+    background-color: #1c212b; /* Matches main body background */
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect on the step */
+.timeline-step:hover::before {
+    background-color: #66b5ff;
+    transform: scale(1.1);
+}
+
+/* Styles for the content block (card) */
+.timeline-content {
+    background: #23283a; /* Dark card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-left: 5px solid #09a0e6; /* Accent color bar */
+    transition: all 0.3s ease;
+}
+
+/* Highlight the content on hover */
+.timeline-step:hover .timeline-content {
+    background: #2a3040;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Status text (Completed, In Progress, Planned) */
+.timeline-content .status {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: -15px;
+    margin-bottom: 1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Specific colors for different statuses */
+.status:contains("Completed") {
+    color: #4CAF50; /* Green */
+    border: 1px solid #4CAF50;
+}
+.status:contains("In Progress") {
+    color: #FFC107; /* Yellow */
+    border: 1px solid #FFC107;
+}
+.status:contains("Planned") {
+    color: #03A9F4; /* Light Blue */
+    border: 1px solid #03A9F4;
+}
+
+/* Style for the description paragraph */
+.timeline-content .description {
+    color: #b0b6c1;
+    font-size: 0.95em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Links container */
+.timeline-content .links {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Individual links within the content */
+.timeline-content .links a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #1a73e8; /* Primary button blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.timeline-content .links a:hover {
+    background: #0b6bd3;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #learning-path {
+        padding: 16px 4vw;
+    }
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-step {
+        padding-left: 50px;
+    }
+
+    .timeline-step::before {
+        left: 10px;
+    }
+}
