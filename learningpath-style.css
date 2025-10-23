@@ -22,12 +22,21 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 0.5em;
     text-align: center; /* Center the main title */
 }
 
 h2 {
+    font-size: 2em; /* Larger step titles */
+    color: #4aa0f0; /* Lighter blue for H2 in timeline content */
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
     font-size: 1.5em; /* Larger step titles */
     color: #66b5ff; /* Lighter blue for H2 in timeline content */
     border-bottom: none;
@@ -132,26 +141,25 @@ a:hover {
     display: inline-block;
 }
 
-/* Specific colors for different statuses */
-.status:contains("Completed") {
+/* --- STANDARD CSS FIX FOR STATUS COLORS --- */
+
+.status-completed {
     color: #4CAF50; /* Green */
     border: 1px solid #4CAF50;
 }
-.status:contains("In Progress") {
+.status-in-progress {
     color: #FFC107; /* Yellow */
     border: 1px solid #FFC107;
 }
-.status:contains("Planned") {
+.status-planned {
     color: #03A9F4; /* Light Blue */
     border: 1px solid #03A9F4;
 }
 
-/* Style for the description paragraph */
-.timeline-content .description {
-    color: #b0b6c1;
-    font-size: 0.95em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+/* Ensure the checkmark icon inherits the color */
+.timeline-content .fa-solid {
+    margin-left: 5px; 
+    color: inherit; /* This makes the icon green inside .status-completed */
 }
 
 /* Links container */

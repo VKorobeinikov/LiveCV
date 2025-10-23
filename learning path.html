@@ -1,20 +1,24 @@
 <!-- Link to your custom CSS file -->
 <link rel="stylesheet" href="learningpath-style.css">
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <section id="learning-path">
     <div class="header-info">
         <h1>Learning Path</h1>
     </div>
 
-    <ol class="timeline">
+    <h2 class="category-heading category-cert">I. Certifications & Foundations 🏅</h2>
+    <ol class="timeline certs-timeline">
 
             <li class="timeline-step step-aws">
             <div class="timeline-content">
-                <h2>Step 1: AWS Cloud Practitioner</h2>
-                <p class="status">Completed<i class="fa-solid fa-circle-check"></i></p>
+                <h3>Step 1: AWS Cloud Practitioner</h3>
+                <p class="status status-completed">Completed <i class="fa-solid fa-circle-check"></i></p>
                 <p class="description">
                     Gain a foundational understanding of AWS Cloud concepts, core services, and basic architecture best practices.
                 </p>
+                <p class="Completion Date">Completion Date: March 24, 2025</p>
 
             <div class="badge-wrapper">
               <div
@@ -31,15 +35,34 @@
                     <a href="https://aws.amazon.com/it/certification/certified-cloud-practitioner/" target="_blank">AWS Cloud Practitioner Exam Guide</a>
                 </div>
             </div>
-        </li>  
+        </li> 
 
+            <li class="timeline-step step-itil4">
+            <div class="timeline-content">
+                <h3>Step 2: ITIL 4 Foundation 📚</h3>
+                <p class="status status-planned">Planned<i class="fa-solid fa-flag"></i></p>
+                <p class="description">
+                    Focus on best practices for IT Service Management (ITSM), covering the service value system and ITIL guiding principles. Essential for understanding modern service delivery frameworks.
+                </p>
+                <p class="Completion Date">Completion Date: tbd</p>
+                <div class="links">
+                    <a href="https://www.axelos.com/certifications/itil-service-management" target="_blank">AXELOS ITIL Site</a>
+                </div>
+            </div>
+        </li>
+
+    </ol>
+
+    <h2 class="category-heading category-tech">II. Technical Skills & Tools ⚙️</h2>
+    <ol class="timeline tech-timeline">
         <li class="timeline-step step-docker">
             <div class="timeline-content">
-                <h2>Step 1: Docker Fundamentals 🐳</h2>
-                <p class="status">Completed <i class="fa-solid fa-circle-check"></i></p>
+                <h3>Step 1: Docker Fundamentals 🐳</h3>
+                <p class="status status-completed">Completed <i class="fa-solid fa-circle-check"></i></p>
                 <p class="description">
                     Learn the basic concepts of containers, images, and the Dockerfile. This is the prerequisite for all Kubernetes work.
                 </p>
+                <p class="Completion Date">Completion Date: October 24, 2025</p>
 
                 <div class="links">
                     <a href="https://docs.docker.com/manuals/" target="_blank">Docker Documentation</a>
@@ -51,8 +74,8 @@
 
         <li class="timeline-step step-minikube">
             <div class="timeline-content">
-                <h2>Step 2: Minikube & K8s Objects ☸️</h2>
-                <p class="status">Planned</p>
+                <h3>Step 2: Minikube & K8s Objects ☸️</h3>
+                <p class="status status-in-progress">In Progress<i class="fa-solid fa-gears"></i></p>
                 <p class="description">
                     Understand Pods, Deployments, and Services. Deploy your first Dockerized application to Minikube using YAML manifests.
                 </p>
@@ -64,8 +87,8 @@
         
         <li class="timeline-step step-terraform">
             <div class="timeline-content">
-                <h2>Step 3: Terraform IaC 🏗️</h2>
-                <p class="status">Planned</p>
+                <h3>Step 3: Terraform IaC 🏗️</h3>
+                <p class="status status-planned">Planned<i class="fa-solid fa-flag"></i></p>
                 <p class="description">
                     Use the Kubernetes Provider with Terraform to manage your deployments as code. Learn the Plan/Apply workflow.
                 </p>
