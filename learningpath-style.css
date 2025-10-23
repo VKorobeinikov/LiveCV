@@ -33,7 +33,7 @@ h2 {
     border-bottom: none;
     padding-bottom: 0;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 p {
@@ -238,4 +238,11 @@ div[data-share-badge-id] {
 div[data-share-badge-id] p,
 div[data-share-badge-id] a {
     color: #333 !important; /* Force a dark grey for good contrast on the light background */
+}
+
+/* ========================================= */
+/* adding spacing for the status  */
+/* ========================================= */
+.status {
+    margin-top: 15px; /* Increased spacing above status */
 }
