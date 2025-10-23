@@ -72,7 +72,7 @@ ul.skills > span {
 }
 
 .skill-item > div {
-  background: #f1f3f4;
+  background: #7e838c81;
   margin: 0.3em 0 0.7em 0.7em;
   padding: 0.5em 1em;
   border-radius: 6px;
@@ -261,7 +261,8 @@ ul.main-skills li::before {
 }
 
 .skill-label {
-  flex: 0 0 260px;
+  flex: 0 0 40%;
+  min-width: 120px;
   color: #fff;
   font-size: 1em;
 }
@@ -271,7 +272,7 @@ ul.main-skills li::before {
   background: #23283a;
   border-radius: 8px;
   height: 14px;
-  margin: 0 1em;
+  margin: 0.5em 0; /* this was breaking the bar-bg and collapsing the element in media*/
   overflow: hidden;
   box-shadow: 0 1px 4px #0002;
 }
@@ -294,11 +295,43 @@ ul.main-skills li::before {
   text-align: left;
 }
 
+/*this is needed to start a new paragraph for the skill levels on phone devices*/
+/*@media (max-width: 600px) {
+  .skill-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skill-label,
+  .skill-level {
+    width: 100%;
+    display: block;
+  }
+  .bar-bg {
+    width: 100%;
+    min-width: 120px;
+    height: 14px;
+    margin: 0.5em 0;
+  }
+  .bar-fill {
+    height: 14px; /*bar fill had no height fixing it*/
+    border-radius: 8px;
+    /* No need to set width here, it comes from .bar-fill.advanced etc. */
+    background: linear-gradient(90deg, #0053be 35%, #1a73e8 60%, #66b5ff 100%);
+    transition: width 0.7s;
+  }
+  .skill-level {
+    margin-top: 0.5em;
+    margin-left: 0;
+    text-align: left;
+  }
+}*/
+
+
 /* Show description only when .expanded is on .skill-item */
-.skill-item .skill-desc {
+.skill-item > .skill-desc { /*overriding the father node for the color*/
   display: none;
-  background: #23283a;
-  color: #b0b6c1;
+  background: #1b293a !important;
+  color: #ffffff !important;
   margin: 0.3em 0 0.7em 0.7em;
   padding: 0.5em 1em;
   border-radius: 6px;
@@ -306,7 +339,7 @@ ul.main-skills li::before {
   transition: all 0.3s;
 }
 
-.skill-item.expanded .skill-desc {
+.skill-item.expanded > .skill-desc {
   display: block;
 }
 
@@ -336,19 +369,51 @@ ul.main-skills li::before {
 .header-container {
     display: flex; /* Enables Flexbox */
     flex-direction: row-reverse; /* Puts the photo on the right */
-    align-items: center; /* Vertically centers the items */
+    align-items: flex-start; /* Vertically aligns at the top */
     justify-content: space-between; /* Spreads items to opposite ends */
+    flex-wrap: wrap; /*wrapping on small screens*/
+    gap: 2em; /*spacing*/
     margin-bottom: 2em; /* Adds space below the header section */
 }
 
 /* Adjust the profile photo styles for the new layout */
 .profile-photo {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    width: 30vw;           /* 30% of viewport width */
+    max-width: 220px;      /* Never larger than 220px */
+    min-width: 100px;      /* Never smaller than 100px */
+    height: auto;          /* Keeps aspect ratio */
     border-radius: 50%;
     border: 6px solid #1a73e8;
     box-shadow: 0 2px 12px #0003;
-    /* Remove the old margin to center it */
-    margin: 0;
+} 
+
+/*adding visual adaptation also for the contact info*/
+.contact-info {
+    flex: 1 1 300px;/*flexible width with min*/
+    min-width: 200px;
 }
+
+/*fixed the issue with visualization on the phone screens*/
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column-reverse; /* Contact info first, photo below */
+    align-items: center;
+    text-align: center;
+  }
+  .profile-photo {
+    width: 50vw;
+    max-width: 150px;
+    margin-top: 1em;
+  }
+  .contact-info {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+
+ul.main-skills li.skill-item > .skill-desc {
+  color: #ffffff !important;
+  background: #1b293a !important;
+}
+
