@@ -197,3 +197,45 @@ a:hover {
         left: 10px;
     }
 }
+
+/* =============================== */
+/* CREDLY BADGE EMBED FIXES */
+/* =============================== */
+
+/* Style the custom wrapper for centering */
+.badge-wrapper {
+    /* Center the block element */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Set max-width to prevent stretching */
+    max-width: 200px; 
+    
+    /* Add vertical spacing */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* COLOR FIX: Light Background- trying to fix the backround color issue with iframe*/
+/* Target the Credly data attribute for high specificity */
+div[data-share-badge-id] {
+    /* KEY FIX: Set a white background for the text to appear on */
+    background-color: white; 
+    
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Makes it look professional */
+    
+    /* Ensure the container is displayed as a block */
+    display: block; 
+}
+
+/* Ensure any text inside the badge container is dark, 
+   so it's visible on the white background (opposite of what you were trying!) 
+   If the badge text is dark, we need the background to be light.
+*/
+div[data-share-badge-id] p,
+div[data-share-badge-id] a {
+    color: #333 !important; /* Force a dark grey for good contrast on the light background */
+}
