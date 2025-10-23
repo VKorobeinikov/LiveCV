@@ -417,3 +417,51 @@ ul.main-skills li.skill-item > .skill-desc {
   background: #1b293a !important;
 }
 
+/* ======================================= */
+/* LEARNING PATH BUTTON STYLES */
+/* ======================================= */
+
+/* Container for positioning the button within the contact info */
+.learning-path-button-container {
+    margin-top: 1.5em; /* Add vertical separation from other contact details */
+    margin-bottom: 0.5em; 
+    text-align: left; 
+}
+
+/* The actual button style: High-contrast, glowing, and interactive */
+.learning-path-button {
+    /* Use the bright accent color for the background */
+    background: #1a73e8; 
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Slightly rounded edges */
+    font-size: 1.05em;
+    display: inline-block;
+    
+    /* Make it POP with a subtle glow */
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.7); 
+    
+    /* Add animation for hover/interaction */
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Icon inside the learning path button */
+.learning-path-button i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Hover Effect: Make it brighter and add a visual lift */
+.learning-path-button:hover {
+    background: #09a0e6; /* Switch to a slightly different accent blue on hover */
+    color: #fff;
+    text-decoration: none;
+    /* Increase the glow and lift the button */
+    box-shadow: 0 4px 20px rgba(9, 160, 230, 0.9);
+    transform: translateY(-2px);
+    border-color: #66b5ff;
+}
